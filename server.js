@@ -68,11 +68,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
-app.use("/api/auth", require("./routes/AuthRoutes"));
+app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/products", require("./routes/productRoutes"));
-app.use("/api/cart", require("./routes/CartRoutes"));
-app.use("/api/orders", require("./routes/OrderRoutes"));
-app.use("/api/wishlist", require("./routes/WishlistRoutes"));
+app.use("/api/cart", require("./routes/cartRoutes"));
+app.use("/api/orders", require("./routes/orderRoutes"));
+app.use("/api/wishlist", require("./routes/wishlistRoutes"));
 
 // Health check
 
