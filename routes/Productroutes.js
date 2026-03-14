@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {
   getProducts, getProduct, createProduct, updateProduct, deleteProduct, addReview, getCategories
-} = require('../app/controllers/productController');
+} = require('../app/controllers/Productcontroller');
 const { protect, adminOnly } = require('../app/middleware/Authmiddleware');
 
 router.get('/', getProducts);
