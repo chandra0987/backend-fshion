@@ -20,10 +20,10 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
 app.use("/api/auth", require('./routes/authRoutes'));
-app.use("/api/products", require("./routes/Productroutes"));
+app.use("/api/products", require("./routes/productRoute"));
 app.use("/api/cart", require("./routes/cartRoutes"));
 app.use("/api/orders", require("./routes/orderRoutes"));
-app.use("/api/wishlist", require("./routes/Wishlistroutes"));
+app.use("/api/wishlist", require("./routes/wishlistRoute"));
 
 // Health check
 app.get("/api/health", (req, res) => {
