@@ -19,10 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
-app.use("/api/auth", require('./routes/authRoutes'));
+app.use("/api/auth", require('./routes/authRoute'));
 app.use("/api/products", require("./routes/productRoute"));
-app.use("/api/cart", require("./routes/cartRoutes"));
-app.use("/api/orders", require("./routes/orderRoutes"));
+app.use("/api/cart", require("./routes/cartRoute"));
+app.use("/api/orders", require("./routes/orderRoute"));
 app.use("/api/wishlist", require("./routes/wishlistRoute"));
 
 // Health check
