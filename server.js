@@ -70,9 +70,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // Routes
 app.use("/api/auth", require("./routes/AuthRoutes"));
 app.use("/api/products", require("./routes/productRoutes"));
-app.use("/api/cart", require("./routes/Cartroutes"));
+app.use("/api/cart", require("./routes/CartRoutes"));
 app.use("/api/orders", require("./routes/OrderRoutes"));
-app.use("/api/wishlist", require("./routes/Wishlistroutes"));
+app.use("/api/wishlist", require("./routes/WishlistRoutes"));
 
 // Health check
 
