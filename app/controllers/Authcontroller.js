@@ -5,7 +5,6 @@ const generateToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET, { expires
 
 // @desc Register user
 exports.register = async (req, res) => {
-  console.log('userbody',req.body)
   try {
     const { name, email, password, phone } = req.body;
     const exists = await User.findOne({ email });
